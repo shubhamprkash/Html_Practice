@@ -1,0 +1,85 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+  <%@ page import="java.sql.*" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS | Order Location</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .disOr{
+            margin-top: 200px;
+            margin-left: 650px;
+            border: none;
+            width: 400px;
+            height: 550px;
+            backdrop-filter: blur(8px);
+            border-radius: 18px;
+            box-shadow: 5px 5px 5px 8px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            padding: 10px;
+            background-color: #efe77c;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav class="navigation">
+            <a href="index.jsp"><h2><span style="color: #ffed00">Logistics</span> <span style="color: white">Management</span></h2></a>
+            <ul>
+                <li><a href="login.jsp">Admin Login</a></li>
+                <li><a href="placeOrder.jsp">Place Order</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button>Support Us</button>
+        </nav> 
+    </div> 
+
+
+<%
+  int orderId = Integer.parseInt(request.getParameter("orderId"));
+  Class.forName("com.mysql.cj.jdbc.Driver");
+  Connection con;
+  Statement statement;
+  ResultSet resultSet;
+  String query;  
+  
+  con = DriverManager.getConnection("jdbc:MySql://localhost:4001/parcel", "root", "");
+    statement = con.createStatement();
+    
+    query = "SELECT * from parcel_tracking WHERE id="+orderId;
+    resultSet = statement.executeQuery(query);
+    
+    resultSet.next();
+    
+%>
+
+
+    <div class="disOr">
+        <label for="order">Order ID
+          <span><%= resultSet.getInt(1) %></span>
+        </label>
+        <br/>
+        <label for="order">Sorce Location
+          <span><%= resultSet.getString(2) %></span>  
+        </label>
+         <br/>
+        <label for="order">Destination Location
+          <span><%= resultSet.getString(4) %></span>
+        </label>
+         <br/>
+        <label for="order">Current Location
+          <span><%= resultSet.getString(6) %></span>
+        </label>
+         <br/>
+        <label for="order">Status
+          <span><%= resultSet.getString(7) %></span>
+        </label>
+        
+    </div>
+</body>
+</html>

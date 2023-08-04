@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="ShubhamPrakash" />
+    <title>cHALLENGE aCCEPTED</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: red solid 1px;
+            height: 600px;
+            width: 500px
+        }
+        .top-row, .mid-row, .bot-row{
+            height: 33.33%;
+            border: green solid 1px;
+            display: flex;
+        }
+        .mid-row{
+            display: flex;
+        }
+        .mid-left,.mid-right{
+            width: 50%;
+            border: 1px solid blue;
+        }
+        .right-top, .right-bot{
+            border: red 1px solid;
+            height: 50%;
+            display: flex;
+        }
+        .mid-top-one, .mid-top-two, .mid-top-three{
+            border: 1px turquoise solid;
+            width: 33.33%;
+        }
+
+        .mid-bot-left, .mid-bot-right{
+            border: green 1px solid;
+            width: 50%;
+            height: 100%;
+        }
+
+        .bot-left{
+            display: flex;
+            width: 30%;
+            border: 1px solid blue;
+        }
+        .bot-right{
+            width: 70%;
+        }
+        .bot-left-top{
+            height: 50%;
+            width: 100%;
+            border: solid green 1px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="top-row"></div>
+
+        <div class="mid-row">
+            <div class="mid-left"></div>
+            <div class="mid-right">
+                <div class="right-top">
+                    <div class="mid-top-one"></div>
+                    <div class="mid-top-two"></div>
+                    <div class="mid-top-three"></div>
+                </div>
+
+                <div class="right-bot">
+                    <div class="mid-bot-left"></div>
+                    <div class="mid-bot-right"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bot-row">
+            <div class="bot-left">
+                <div class="bot-left-top"></div>
+                <div class="bot-left-bot"></div>
+            </div>
+            <div class="bot-right"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

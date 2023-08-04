@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: #393E46 ;
+        }
+        body{
+            height: 100vh;
+            display:flex ;
+            justify-content: center;
+            align-items:center;
+            background: #00ADB5;
+        }
+        .container-out{
+            /* margin: 4rem auto; */
+            height: 20rem;
+            width: 20rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            transform: scale(1.6);
+            background: #eee;
+            box-shadow: 10px 10px 20px 1px ;
+
+        }
+        .s-block{
+            /* border: 2px rebeccapurple solid; */
+            /* padding: 2px; */
+            margin: 40px 0 ;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .s-block > input{
+            margin-right: 3px;
+            border-radius: 12px 4px 4px 12px;
+            padding: 4px;
+            width: 75%;
+            background: #393E46;
+            color: white;
+            
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: rgb(148, 255, 244);
+            opacity: 1; /* Firefox */
+        }
+        .s-block > .s-btn{
+            border-radius: 4px 12px 12px 4px;
+            padding: 4px 8px;
+            width: 15%;
+            background: darkcyan;
+            color: white;
+            border: teal solid;
+            
+        }
+        .s-btn-block{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+        }
+        .s-btn-block > button{
+            padding: 8px;
+            width: 6.4rem;
+            background: #00ADB5;
+            color: rgb(255, 255, 255);
+            border-radius: 12px;
+            border: none;
+        }
+        .big-btn{
+            padding: 4px;
+            background: #222831;
+            color: rgb(255, 242, 224);
+            border-radius: 12px;
+        
+        }
+        footer{
+            text-align: center;
+            margin-top: 25px;
+            /* background-color: 222831; */
+            color: #00ADB5;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="container-out">
+        <center><h1>Challenge Accepted</h1></center>
+        <div class="s-block">
+            <input type="search" name="search-area" id="search-area" placeholder="Search">
+            <button class="s-btn">S</button>
+        </div>
+        
+        <div class="s-btn-block">
+            <button>Button</button><button>Button</button>
+        </div>
+        
+
+        <button class="big-btn">Button</button>
+
+        <footer>&copy Shubham | 2023</footer>
+    </section>
+</body>
+</html>

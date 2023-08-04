@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday | @Shubham</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow-y: hidden;
+            font-family: sans-serif;
+        }
+
+        /* .b-container{
+            display: flex;
+        } */
+ 
+        /* navbar */
+        nav{
+            border-bottom: solid black 3px;
+            background-color: aquamarine;
+        }
+        nav,.btn-area, .links-btns{
+            display: flex;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+
+        }
+        .logo, .btn-area{
+            height: 8rem;
+            width: 50%;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-top-ryt{
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+        .links-btns{
+            display: flex;
+            justify-content: end;
+            height: 50%;
+            width: 100%;
+            /* border: 1px solid gold ;s */
+            padding: 5px;
+
+           
+        }
+
+        li{
+            list-style: none;
+            display: inline;
+            border-radius: 12%;
+            /* border: 2px solid aqua; */
+            padding: 8px;
+            background-color: gold;
+            margin-left: 20px;
+            
+
+        }
+
+        /* *************************** body */
+        .pic-sec{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: antiquewhite;
+        }
+
+        .pics{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            padding: 20px;
+        }
+        .pics > img{
+            width: 320px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+        .pics > p{
+            margin-top: 5px;
+            font-weight: 800;
+        }
+        .big-pic-area{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pic-big > img{
+            width: 380px;
+            height: 220px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="b-container">
+        <!-- ************************* NAvigation area -->
+        <nav>
+            <div class="logo"><h2>LOGO</h2></div>
+
+            <div class="btn-area">
+                <div class="nav-top-ryt"></div>
+
+                <div class="links-btns">
+
+                    <ul >
+                        <li>one</li>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+         
+        <!-- ************************  body area -->
+
+        <section class="pic-sec">
+            <article class="pics ">
+                <img src="https://source.unsplash.com/random/320x200?Music" alt="music-imgs">
+                <p>something abt the picture</p>
+            </article>
+            
+            <article class="pics ">
+                <img src="https://source.unsplash.com/random/320x200?dance" alt="">
+                <p>something abt the picture</p>
+            </article>
+
+            <article class="pics ">
+                <img src="https://source.unsplash.com/random/320x200?books" alt="">
+                <p>something abt the picture</p>
+            </article>
+
+            <article class="pics ">
+                <img src="https://source.unsplash.com/random/320x200?sports" alt="">
+                <p>something abt the picture</p>
+            </article>
+
+            <section class="big-pic-area">
+                <article class="pics pic-big ">
+                    <img src="https://source.unsplash.com/random/400x300?university" alt="">
+                    <p>something abt the picture</p>
+                </article>
+            </section>
+        </section> 
+
+    </section>
+</body>
+</html>

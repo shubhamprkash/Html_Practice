@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - one</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:darkkhaki;
+        }
+        .container{
+            /* border: 2px solid red; */
+            height: 100vh;
+            width: 60%;
+            margin: 0 20%;
+        }
+        .header{
+            /* border: green solid 2px; */
+
+            background-color:aquamarine ;
+            height: 10%;
+        }
+        .main{
+            height: 80%;
+            /* display: flex; */
+        }
+        .menu{
+            /* border: solid blue 2px; */
+            background-color: bisque;
+            height: 100%;
+            width: 30%;
+            float: left;
+
+
+        }  
+        .content{
+             /* border: solid rgb(255, 0, 174) 2px; */
+             background-color: cadetblue;
+             height: 100%;
+             width: 70%;
+             float: right;
+             
+        }
+        .footer{
+            /* border: 2px solid rgb(0, 255, 140); */
+            background-color: darksalmon;
+            height: 10%;
+        }
+        .center-txt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header center-txt"><h1>Header</h1></header>
+        
+        <Section class="main">
+            <aside class="menu center-txt">
+                <h3>Aside or menu</h3>
+            </aside>
+            <div class="content center-txt">
+                <h3>Main content of the page.</h3>
+            </div>
+        </Section>
+        
+        
+        <footer class="footer center-txt">
+            <h3>Footer</h3>
+        </footer>
+
+    </div>
+
+
+    
+</body>
+</html>
