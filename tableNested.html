@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table Layout</title>
+    <style>
+        thead th{
+            background-color: aquamarine;
+            /* border: solid; */
+            margin-bottom: 30px;
+        }
+        footer{
+            width: 100%;
+            background-color: bisque;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <table width="100%" cellspacing="20" cellpadding="10" >
+        <thead>
+            <tr>
+                <th colspan="2" ><h1>Amazon Shopping</h1></th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td width="200">
+                    <img src="./lpu.jpg" width="150px" height="150px" alt="Imgae practice">
+                </td>
+                <td>
+                    <table border="1" width="100%"> 
+                        <colgroup span="1" style="background-color: yellow;"></colgroup>
+                        <tr>
+                            <td width="100px">Name</td>
+                            <td>LPU CSE</td>
+                        </tr>
+                        <tr>
+                            <td width="100px">Price</td>
+                            <td>₹1 Cr.</td>
+                        </tr>
+                </table></td>
+            </tr>
+            <tr>
+                <td width="200">
+                    <img src="./nacA++.jfif" width="150px" height="150px" alt="Imgae practice">
+                </td>
+                <td>
+                    <table border="1" width="100%"> 
+                        <colgroup span="1" style="background-color: yellow;"></colgroup>
+                        <tr>
+                            <td width="100px">Name</td>
+                            <td >NAAC Accredation</td>
+                        </tr>
+                        <tr>
+                            <td width="100px">Price</td>
+                            <td>₹5 Cr.</td>
+                        </tr>
+                </table></td>
+            </tr>
+            
+
+        </tbody>
+       
+    </table>
+   <footer >&copy;2023. All Rights Reserved.</footer>
+</body>
+</html>
