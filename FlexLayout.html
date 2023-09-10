@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Accepted</title>
+    <style>
+        *, body, html,main{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            height: 100vh;
+        } */
+        .bord{
+            border: 3px solid red;
+        }
+        main, .navbar, .main-body, footer{
+            
+            padding: 5px;
+            border-radius: 8px;
+
+        }
+        .navbar{
+            height: 15vh;
+            display: flex;
+            gap: 15px;
+            
+        }
+        .box-curve{
+            border-radius: 8px;
+        }
+        .logo-box{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .logo-circle{
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+
+        nav{
+            width: 80%;
+        }
+        .main-body{
+            height: 75vh;
+            display: flex;
+            gap: 15px;
+        }
+
+        aside{
+            width: 20%;
+        }
+        .content-box{
+            box-sizing: border-box;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .top-load{
+            display: flex;
+            /* flex-wrap: wrap; */
+            width: 100%;
+            height: 49%;
+            /* border: green solid ; */
+            gap: 8px;
+        }
+        .sm-box{
+            width: 50%;
+        }
+        .bot-load{
+            width: 100%;
+            height: 49%;
+        }
+
+        footer{
+            height: 8vh;
+            
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="navbar ">
+            <div class="logo-box bord box-curve">
+                <div class="logo-circle bord"></div>
+            </div>
+            <nav class="bord box-curve"></nav>
+        </section>
+
+        <section class="main-body ">
+            <aside class="bord box-curve"></aside>
+
+            <section class="content-box">
+
+                <div class="top-load ">
+                    <div class="sm-box bord box-curve"></div>
+                    <div class="sm-box bord box-curve"></div>
+                </div>
+
+                <div class="bot-load bord box-curve"></div>
+
+            </section>
+    
+        </section>
+
+        <footer class="bord"><center> &copy; Shubham Prakash | 2023 </center> </footer>
+    </main>
+    
+
+
+</body>
+</html>

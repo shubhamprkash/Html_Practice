@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML5 Web Layout</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .header h1{
+            width: 80%;
+            justify-content: center;
+            text-align: center;
+        }
+        .img-div-header{
+            width: 20%;
+        }
+
+        nav ul{
+            list-style: none;
+            padding: 5px;
+            background-color: antiquewhite;
+        }
+
+        nav ul li{
+            display: inline;
+            padding-left: 10px ;
+        }
+
+       .mar-20{
+        margin: 20px;
+       }
+
+
+        footer{
+            padding: 30px;
+            background-color: black;
+            color: aliceblue;
+            font-size: larger;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="header" bgcolor="black">
+        <div class="img-div-header">
+            <img src="amazon-logo.jpg" height="40px">
+        </div>
+        <h1>Sample Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h1 class="mar-20">About US</h1>
+            <p class="mar-20">Welcome to our website! We provide </p>
+    
+        </article>
+       
+        <article>
+            <h1 class="mar-20">Services</h1>
+            <p class="mar-20">Welcome to our website! We provide </p>
+    
+        </article>
+        <article>
+            <img src="linkedin-banner.webp" width="100%" height="200px" alt="">
+        </article>
+
+    </section>
+
+    <section>
+
+    </section>
+
+
+    <footer>
+        &copy; 2023 @ Shubham Prakash
+    </footer>
+    
+</body>
+</html>

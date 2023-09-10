@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Demo</title>
+    
+    <style>
+        .container{
+          display: grid;
+          place-content: center;
+          gap: 5px ;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="container">
+        <h1 id="outputter">0</h1>
+        <button type="button" id="plusMe" onclick="incre()"> + </button>
+        <button type="button" id="minusMe" onclick="decre()"> - </button>
+    </section>
+
+    <script>
+        let counter =0;
+        const outputter = document.querySelector("#outputter");        
+
+
+        function incre(){
+            counter++;
+            outputter.textContent = counter;
+        }
+
+        function decre(){
+            counter--;
+            outputter.textContent = `${counter}`;
+        }
+
+    </script>
+</body>
+</html>
