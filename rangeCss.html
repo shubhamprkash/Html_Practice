@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Range Color Change</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: antiquewhite;
+      }
+
+      input[type="number"]{
+        padding: 10px;
+        margin: 5px;
+        border: 5px solid blueviolet;
+        box-shadow: 5px 6px 7px grey;
+
+      }
+      /* input:in-range{
+        border:5px solid greenyellow;
+        box-shadow: 5px 6px 7px blue;
+      } */
+      input:out-of-range{
+        border:5px solid red;
+        box-shadow: 5px 6px 7px black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <label for="age-range">Adult Checker : </label>
+        <input type="number" min="18" max="45" name="age-range" id="age-inpu" />
+    </main>
+  </body>
+</html>

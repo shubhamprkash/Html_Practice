@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links Styling</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+        nav{
+            padding: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+        a {
+            text-decoration: none;
+            border: 3px solid aqua;
+            padding: 8px;
+            font-size: 1.6em;
+            font-weight: 900;
+        }
+        a:hover {
+            color: blueviolet;
+        }
+        a:active {
+            color: green;
+            
+        }
+
+        .box{
+            margin:20px  auto;
+            width: 75%;
+            border: solid 2px blueviolet;
+            
+            padding: 20px;
+            background: wheat;
+        }
+
+       .box:target{
+        background-color: chocolate;
+        transform: scale(1.2);
+        transition: 1.3s ease-in;
+       }
+
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#html-sec" >HTML</a>
+      <a href="#css-sec" >CSS</a>
+      <a href="#js-sec" >JavaScript</a>
+    </nav>
+
+    <section class="content">
+      <div id="html-sec" class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          maxime unde cum, rem qui labore eveniet quaerat vitae pariatur fugit
+          ut. Provident nostrum reprehenderit optio nesciunt molestiae facere
+          architecto dicta. Porro suscipit tempore officiis animi voluptate quae
+          alias ipsum debitis? Magni culpa ea similique quas veniam laborum
+          maiores atque, a delectus est incidunt dicta, veritatis numquam
+          voluptates recusandae nam voluptatibus?
+        </p>
+      </div>
+      <div id="css-sec" class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis,
+          ab cupiditate porro illo consequuntur voluptate, velit eligendi, id
+          molestias incidunt. Voluptatem voluptates natus nam porro laborum
+          aliquid similique explicabo. Consectetur, quas. Delectus ipsa commodi
+          alias itaque esse asperiores quae soluta laboriosam quia nam eaque,
+          minus assumenda unde tempore aspernatur et accusantium at pariatur
+          inventore nostrum atque mollitia dicta cupiditate!
+        </p>
+      </div>
+      <div id="js-sec" class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          laudantium modi eligendi vero velit asperiores, nam accusamus est odit
+          voluptatem! Quae ab veritatis nemo voluptas ut quia accusamus
+          cupiditate animi! Quia debitis doloribus odit omnis esse excepturi
+          maxime sit nulla ad aperiam expedita eaque vel porro exercitationem
+          beatae veniam dolore molestiae perspiciatis consequuntur, eveniet
+          optio error culpa officiis facere! Quaerat!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
