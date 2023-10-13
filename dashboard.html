@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard | MoneyMan</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: linear-gradient();
+      }
+      .container {
+        
+        background: white;
+        border: 2px solid gray;
+        border-radius: 12px;
+        margin: 5px auto;
+        padding: 5px;
+        width: 60%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+      .flexy{
+         display: flex; 
+         width: 100%;
+       
+      }
+      nav {
+        /* background: skyblue; */
+        border-bottom: solid gray 1px ;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        
+
+      }
+      
+      aside {
+        width: 20%;
+        text-align: center;
+        /* border-right: 1px solid gray; */
+        /* background: aqua; */
+        /* padding: 5px; */
+        & h3 {
+            /* border: #1a23fc solid; */
+            border-radius:  12px;
+            padding: 5px;
+            background: black;
+            color: white;
+            width: max-content;
+        }
+
+        & ul {
+          list-style: none;
+          margin: 10px ;
+          text-align: center;
+        }
+        & li{
+            
+            padding: 5px;
+            /* border: #1a23fc solid; */
+            
+        }
+        & li:hover{
+            background: #1fc9e3;
+            color: aqua;
+    
+        }
+      }
+      .content{
+        width: 100%;
+        /* border: #7d4dd2 solid; */
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .balance-container{
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+        /* border: green solid; */
+
+
+      }
+      .balance-view{
+        width: 40%;
+        /* border: red solid; */
+        border-radius: 12px;
+        height: max-content;
+        padding: 10px;
+        margin: auto;
+      }
+      .content-box{
+        margin: 5px;
+        border: green solid;
+        border-radius: 12px;
+        width: 100%;
+      }
+
+
+      .red-grad{
+        background: linear-gradient(
+          316deg,
+          rgba(252, 108, 108, 0.885),
+          white,
+          rgb(246, 157, 171),
+          red
+        );
+        background-size: 1000% 1000%;
+        -webkit-animation: moveIt 9s ease infinite;
+        -moz-animation: moveIt 9s ease infinite;
+        animation: moveIt 9s ease infinite;
+      }
+      .green-grad{
+        background: linear-gradient(
+          316deg,
+          rgba(101, 250, 125, 0.885),
+          rgb(54, 206, 65),
+          white,
+          green
+        );
+        background-size: 1000% 1000%;
+        -webkit-animation: moveIt 9s ease infinite;
+        -moz-animation: moveIt 9s ease infinite;
+        animation: moveIt 9s ease infinite;
+      }
+
+      .gradient {
+        background: linear-gradient(
+          316deg,
+          #1a23fc,
+          #42e3fa,
+          #7d4dd2,
+          #5aa0fa
+        );
+        
+        background-size: 1000% 1000%;
+        -webkit-animation: moveIt 9s ease infinite;
+        -moz-animation: moveIt 9s ease infinite;
+        animation: moveIt 9s ease infinite;
+      }
+
+      @keyframes moveIt {
+        0% {
+          background-position: 29% 0%;
+        }
+        50% {
+          background-position: 72% 100%;
+        }
+        100% {
+          background-position: 29% 0%;
+        }
+      }
+
+    </style>
+  </head>
+  <body class="gradient" >
+        <main class="container">
+
+            <nav >
+                    <h1>DashBoard</h1>
+            </nav>
+            <br>
+            <section class="flexy">
+                <aside>
+                    <h3>Connections</h3>
+                    <ul>
+                    <li>Shubham</li>
+                    <li>Shubham</li>
+                    <li>Shubham</li>
+                    <li>Shubham</li>
+                    </ul>
+                </aside>
+                <section class="content">
+                    <section class="flexy balance-container">
+                        <div class="balance-view red-grad">
+                            Credit
+                        </div>
+                        <div class="balance-view green-grad">
+                            Debit
+                        </div>
+                    </section>
+                    <section class="content-box">
+    
+                    </section>
+                </section>
+               
+            </section>
+            
+        </main>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+
+    <style>
+
+
+        .info{
+
+            display: grid;
+            gap: 25px;
+            grid-template-columns: 2fr 10fr;
+        }
+        .bordy{
+            border: 1px solid blue;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+        }
+        aside{
+            border-right: 1px solid black;
+        }
+        .colory{
+            background-color: aquamarine;
+            
+        }
+
+        .card-container{
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            /* flex-wrap: wrap; */
+
+        }
+        .cards > img{
+            
+            border: 1px solid brown;
+            border-radius:50%;
+        }
+        .cards{
+            width: 200px;
+            border: 1px solid aqua;
+            border-radius: 12px;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        
+        .card-content{
+            background: antiquewhite;
+            text-align: center;
+        }
+
+
+    </style>
+
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <section class="info">
+        <h3 class="logo bordy">Logo Here</h3>
+    <h3 class="title bordy colory">Amazon Shopping</h3>
+    <aside>
+        <h3>Shopping Categories</h3>
+      <ul>
+        <li>Electronics</li>
+        <li>Footware</li>
+        <li>Fashion</li>
+      </ul>
+    </aside>
+    <article>
+      <h2>Amazon Home</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        fugit architecto id doloremque unde! Illum, rerum. Repudiandae magni
+        debitis tempora sapiente? Vero autem ad est placeat cupiditate eveniet
+        voluptas non? Modi saepe mollitia architecto nostrum assumenda veniam
+        corrupti animi? Autem soluta architecto repellendus expedita consectetur
+        sequi ipsum sunt, quibusdam animi suscipit incidunt voluptatibus odio
+        fuga eius ea aut obcaecati modi. Repudiandae, modi eveniet fugit
+        accusantium numquam, consequatur veniam aliquam perferendis omnis dolor
+        at! Non fugiat qui et, veniam dolorem nesciunt dolorum illum tempora
+        iusto cum architecto nemo minus officia deleniti. At voluptas sed
+        accusantium, porro perspiciatis, vel debitis, sequi veritatis optio
+        tempore velit aliquid reiciendis esse. Sit facilis ullam ratione,
+        cupiditate nisi ipsum quam, doloremque harum odit magnam nihil sunt?
+        Repellendus dicta itaque, minima, voluptates sint ad voluptatem est
+        officiis quibusdam eaque numquam pariatur doloribus rerum! Optio,
+        facilis, voluptas suscipit reiciendis reprehenderit nulla, ad incidunt
+        dolorem vitae est quia delectus. Incidunt magni officia tenetur dolore
+        quis doloremque? Quisquam in magnam, porro incidunt aut delectus fugiat
+        officiis velit, minus saepe nobis doloribus id numquam nam sequi vel,
+        impedit et commodi rerum. Sunt nostrum ipsam minima, itaque, deleniti
+        dolor reprehenderit exercitationem porro quo dicta voluptatem maiores
+        eos mollitia dolores ea et accusamus dolore sint soluta quod expedita
+        unde? Eum quisquam qui dolorem. Beatae suscipit aliquam molestiae, unde
+        tempore fuga sequi ullam est, ab officiis dolore ducimus. Assumenda
+        ipsam, in cumque consequatur aperiam necessitatibus illo impedit saepe
+        amet earum nulla. Ex, magnam sint!
+      </p>
+    </article>
+
+    <p class="bordy">contact@gmail.com</p>
+    <p class="bordy colory">@ Copyright 2023 Shubham Studios</p>
+
+    </section>
+
+    <section class="card-container">
+        <div class="cards">
+            <img src="shoes.jpeg" width="150px" height="100px" alt="">
+            <div class="card-content">
+                <h2>Nike Casuals</h2>
+                <p> &#8377 6788.00 </p>
+                <span>More</span>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="shoes.jpeg" width="150px" height="100px" alt="">
+            <div class="card-content">
+                <h2>Nike Casuals</h2>
+                <p> &#8377 6788.00 </p>
+                <span>More</span>
+            </div>
+        </div>
+    </section>
+      </body>
+</html>
