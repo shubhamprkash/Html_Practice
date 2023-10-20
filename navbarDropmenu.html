@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Dropdown</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
+            align-items: center;
+            background: teal;
+        }
+        ul{
+
+            list-style: none;
+            color: aliceblue;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        ul li{
+            display: inline;
+            padding: 10px;
+            
+
+        }
+        ul li:hover{
+            background-color:rgba(255, 255, 255, 0.507);
+            border-radius: 12px;
+        }
+        footer{
+            display: absolute;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <img src="./cat.jpeg" alt="cats-img" width="80px" height="80px" style="border-radius: 50%; border: white 2px solid;" >
+        <ul>
+            <input type="checkbox" name="burger-menu" id="toggle_box">
+            <label for="toggle_box">&#9776</label>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+<footer>All Rights Reserved &copy; Shubham Studios | 2023</footer>
+</html>

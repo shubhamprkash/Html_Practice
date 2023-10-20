@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA 2 | Shubham Prakash</title>
+
+    <style>
+      * {
+        
+        box-sizing: border-box;
+      }
+
+      .flexy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav li {
+        list-style: none;
+        display: inline;
+        padding: 8px;
+      }
+      nav li:hover {
+        border-bottom: 4px solid orangered;
+        transition: 0.2s ease-in;
+      }
+
+      header {
+        width: 100%;
+        padding: 5px 45px;
+      }
+
+      header button {
+        width: 160px;
+        height: 60px;
+        background: orange;
+        color: aliceblue;
+        font-weight: 600;
+        font-size: larger;
+        border: none;
+      }
+      header button:hover{
+        transform: scale(1.1);
+      }
+
+      h1 span {
+        color: orange;
+      }
+      .cards{
+        background: rgb(255, 255, 255);
+        padding: 6px;
+        margin: 20px 20px;
+        justify-content: space-around;
+      }
+
+      .card{
+        width: 260px;
+        & img{
+            width: 100%;
+        }
+        box-shadow: 10px 10px 60px grey
+      }
+      .card-content{
+        text-align: center;
+        padding: 8px;
+        & a{
+            text-decoration: none;
+            color: orange;
+        }
+        & hr{
+            color: gray;
+            
+        }
+      }
+      .fixed-btns{
+
+        position: fixed;
+        right: 0;
+        top: 250px;
+        
+        & li{
+            list-style: none;
+            padding: 6px;
+            border: 1px solid black;
+            border-radius: 8px ;
+            margin-top: 8px;
+            margin-right: 8px;
+            background: gray;
+
+        }
+        & li:hover{
+            transform: scale(1.3);
+        }
+
+      }
+
+      .bottom-navs{
+        background: rgb(53, 53, 53);
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding: 30px 80px;
+        & li{
+            list-style: none;
+        }
+      } 
+      .img-sec
+      {
+        margin: 40px 0;
+      }
+      .vid{
+        width: 50%;
+        & iframe{
+            min-width: 50%;
+        }
+      }
+
+      .big-img{
+        /* background: url('/cllgImg.jpg') no-repeat; */
+            min-width: 400px;
+            max-width: 50%;
+        & img{
+
+            width: 100%;
+            height: 100%;
+        }
+      }
+      .stats{
+        padding: 8px;
+        margin: 10px 80px;
+        justify-content: space-between;
+      }
+      .stat{
+        text-align: center;
+        line-height: 6px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="flexy">
+      <img src="lpulogo.png" width="200" height="100" alt="lpu-logo" />
+      <ul>
+        <li>About</li>
+        <li>Admission</li>
+        <li>Academics</li>
+        <li>Campus Life</li>
+        <li>Placements</li>
+        <li>Research</li>
+        <li>🔍</li>
+        <li>🔈</li>
+      </ul>
+    </nav>
+
+    <header class="flexy">
+      <h1>#Think<span>Big</span></h1>
+      <button>Apply Now</button>
+    </header>
+
+    <section class="cards flexy">
+
+      <div class="card">
+        <img src="wuri-img.jpeg" alt="" />
+        <div class="card-content">
+          <p>
+              The prestigios WURI Rankings 2023 has ranked us third in India
+              among both govenrment and private universities.
+            </p>
+            <hr>
+            <a href="#">READ MORE -> </a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="wuri-img.jpeg" alt="" />
+        <div class="card-content">
+          <p>
+              The prestigios WURI Rankings 2023 has ranked us third in India
+              among both govenrment and private universities.
+            </p>
+            <hr>
+            <a href="#">READ MORE -> </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="wuri-img.jpeg" alt="" />
+        <div class="card-content">
+          <p>
+              The prestigios WURI Rankings 2023 has ranked us third in India
+              among both govenrment and private universities.
+            </p>
+            <hr>
+            <a href="#">READ MORE -> </a>
+        </div>
+      </div>
+
+    </section>
+
+    <aside class="fixed-btns">
+        <ul>
+            <li>📞</li>
+            <li>🐳</li>
+            <li>🖥</li>
+            <li>👓</li>
+            <li>🔑</li>
+        </ul>
+    </aside>
+
+    <section class="img-sec flexy">
+        <div class="big-img">
+            <img src="cllgImg.jpg" width="600px" alt="">
+        </div>
+        <div class="vid">
+            <iframe width="420" height="230" src="https://www.youtube.com/embed/BQ2y_l5A5YQ?controls=0">
+            </iframe>
+        </div>
+
+    </section>
+
+    <section class="stats flexy">
+        <div class="stat">
+            <img src="./ppl-logo.jpg" width="80px" height="50px" alt="">
+            <h1>3000 +</h1>
+            <p>Students</p>
+        </div>
+        <div class="stat">
+            <img src="./stu-logo.jpg" width="80px" height="50px" alt="">
+            <h1>50K +</h1>
+            <p>Alumina</p>
+        </div>
+        <div class="stat">
+            <img src="./cal-logo.jpg" width="80px" height="50px" alt="">
+            <h1>600 +</h1>
+            <p>Campus Events</p>
+        </div>
+        <div class="stat">
+            <img src="./profile-logo.jpg" width="80px" height="50px" alt="">
+            <h1>600 +</h1>
+            <p>High Profile Visitors</p>
+        </div>
+        
+    </section>
+
+    <section class="bottom-navs">
+        <div>
+            <h2>Admission</h2>
+            <ul>
+                <li> > Admission 2023-2024</li>
+                <li> > Schoolarship</li>
+                <li> > Fee Deposit</li>
+                <li> > FAQ's </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Other Links</h2>
+            <ul>
+                <li> > Admission 2023-2024</li>
+                <li> > Schoolarship</li>
+                <li> > Fee Deposit</li>
+                <li> > FAQ's </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+  </body>
+</html>
