@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        form{
+            display: grid;
+            grid-template-columns: 4fr;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form onsubmit=" return validate()" action="home.html">
+        <label for="username">UserName:</label>
+        <input type="text" name="username" id="uname">
+
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" >
+
+        <button  type="submit">Login</button>
+    </form>
+
+
+    <script>
+        function validate(){
+
+            let uname = document.getElementById('uname');
+            let pass = document.getElementById('pass');
+
+            if(uname.value == "" || pass.value == ""){
+                uname.style.border ="solid red 2px";
+                alert("Empty Vals");
+                
+                return false;
+            }
+            else{
+                true;
+            }
+        }
+    </script>
+    
+</body>
+</html>
