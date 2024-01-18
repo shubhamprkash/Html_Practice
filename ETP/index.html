@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive Quiz</title>
+    <style>
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Interactive Quiz</h1>
+
+    <div class="question">
+        <h3>Question 1:</h3>
+        <p>What is the capital of india?</p>
+        <input type="text" id="answer1">
+        <button onclick="checkAnswer(1)">Submit</button>
+        <p id="feedback1" class="feedback"></p>
+    </div>
+
+    <div class="question">
+        <h3>Question 2:</h3>
+        <p>What is the capital of United Kingdom?</p>
+        <input type="text" id="answer2">
+        <button onclick="checkAnswer(2)">Submit</button>
+        <p id="feedback2" class="feedback"></p>
+    </div>
+
+    <script>
+
+        var questions = ["Capital of India?", "Capital of United Kingdom?", "Capital of Russia?"];
+        var answers = ["delhi", "london", "moscow"];
+        
+
+        function checkAnswer(questionNumber) {
+            var answerElement = document.getElementById('answer' + questionNumber);
+            var feedbackElement = document.getElementById('feedback' + questionNumber);
+            var answer = answerElement.value.toLowerCase();
+
+            if (questionNumber === 1) {
+                if (answer === 'delhi') {
+                    feedbackElement.textContent = 'Correct!';
+                    feedbackElement.style.color = 'green';
+                } else {
+                    feedbackElement.textContent = 'Incorrect. The capital of India is Delhi.';
+                    feedbackElement.style.color = 'red';
+                }
+            } else if (questionNumber === 2) {
+                if (answer === 'london') {
+                    feedbackElement.textContent = 'Correct!';
+                    feedbackElement.style.color = 'green';
+                } else {
+                    feedbackElement.textContent = 'Incorrect. The capital of United Kin is London.';
+                    feedbackElement.style.color = 'red';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+

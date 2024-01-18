@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive Quiz</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        main{
+            width: 100%;
+            padding: 20px;
+            margin: 10px auto ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            
+        }
+        #quiz{
+            border: 1px solid red;
+            border-radius: 12px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .feedback {
+            background-color: beige;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 12px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #nextButton{
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Interactive Quiz</h1>
+    <main>
+
+    
+  
+
+    <div id="quiz">
+
+    </div>
+
+    <script>
+        var questions = ["What is the capital of India?", "What is the capital of United Kingdom?", "What is the capital of Russia?"];
+        var answers = ["delhi", "london", "moscow"];
+        var currentQuestion = 0;
+        function handleSumit() {
+            var answerElement = document.getElementById('answer');
+            var feedback = document.getElementById('feedback');
+            var userAnswer = answerElement.value.toLowerCase();
+
+            var correctAnswer = answers[currentQuestion];
+
+            if (userAnswer === correctAnswer) {
+                feedback.textContent = 'Correct!';
+                feedback.style.color = 'green';
+            } else {
+                feedback.textContent = 'Incorrect. The correct answer is ' + correctAnswer.charAt(0).toUpperCase() + correctAnswer.slice(1) + '.';
+                feedback.style.color = 'red';
+            }
+            document.querySelector('button').disabled = true;
+            document.getElementById('nextButton').style.display = 'block';
+        }
+
+        function handleNext() {
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                showQuestion(currentQuestion);
+            } else {
+                // Quiz is over
+                var quizElement = document.getElementById('quiz');
+                quizElement.innerHTML = '<h3>Quiz is over!</h3>';
+            }
+        }
+
+        function showQuestion(questionIndex) {
+            var quizElement = document.getElementById('quiz');
+            quizElement.innerHTML = `
+        <div class="question">
+            <h3>Question ${questionIndex + 1}:</h3>
+            <p>${questions[questionIndex]}</p>
+            <input type="text" id="answer">
+            <button onclick="handleSumit()">Submit</button>
+            <button id="nextButton" style="display: none;" onclick="handleNext()">Next Question</button>
+            <p id="feedback" class="feedback"></p>
+        </div>
+    `;
+        }
+        showQuestion(currentQuestion);
+    </script>
+    </main>
+</body>
+
+</html>

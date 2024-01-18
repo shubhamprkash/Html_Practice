@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    
-</body>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f2f2f2;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .header a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+        font-size: 16px;
+      }
+
+      .header a:hover {
+        text-decoration: underline;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+      }
+
+      .item {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: center;
+        width: calc(33.333% - 20px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .item:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .item img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .item h3 {
+        margin: 0;
+        margin-bottom: 5px;
+      }
+
+      .item p {
+        margin: 0;
+        margin-top: 5px;
+        color: #777;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: white;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer p {
+        margin: 0;
+        font-size: 14px;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">Microsoft Start</a>
+      <a href="#">Q Search the web</a>
+      <a href="#">myClass</a>
+      <a href="#">GitHub</a>
+      <a href="#">YouTube</a>
+      <a href="#">♥</a>
+      <a href="#">UMS</a>
+      <a href="#">M</a>
+    </header>
+    <div class="content">
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="Image 1" />
+        <h3>Inbox Shubham Pr... in S</h3>
+        <p>shubhamprasad4u@gmail.com</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="Image 2" />
+        <h3>LPU Live</h3>
+        <p>lpu.live</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="Image 3" />
+        <h3>Amazon.in</h3>
+        <p>www.amazon.in</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="Image 4" />
+        <h3>Netlify</h3>
+        <p>app.netlify.com</p>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/300x200" alt="Image 5" />
+        <h3>Bengaluru</h3>
+        <p>20°C</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2023 Microsoft. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
